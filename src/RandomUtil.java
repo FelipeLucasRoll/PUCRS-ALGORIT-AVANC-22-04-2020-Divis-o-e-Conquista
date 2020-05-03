@@ -6,6 +6,11 @@ public class RandomUtil {
 	    return r.nextInt((5000 - 0) + 1) + 0;
 	}
 	
+	public static long randomLong() {
+	    Random r = new Random();
+	    return r.nextInt((1_000_000 - 0) + 1) + 0;
+	}
+	
 	public static int[] randomVector(int size) {
 		int[] vetor = new int[size];
 		for(int x=0; x<size; x++) {
